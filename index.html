@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Joseph So</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+
+  <!-- 导入字体样式 -->
+  <link href="https://fonts.googleapis.com/css?family=Athiti" rel="stylesheet">
+
+  <!-- 其他样式表和脚本等 -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap" rel="stylesheet">
+
+    <!-- importing font awesome icons -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+
+  <header>
+    <div id="header">
+      <div class="nav">
+        <ul class="nav-bar">
+          <li><a href="#home" title="Home">Introduction</a></li>
+          <li><a href="#awards" title="Awards">Awards</a></li>
+          <li><a href="#qualis" title="Qualifications">Qualifications </a></li>
+          <li><a href="#skill" title="Skills">Skills</a></li>
+          <li><a href="#more" title="more">More About Me</a></li>
+          <li><a href="#contact" title="Contact Info">Contact Info</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section 1 -->
+  <section class="pageOne text-center" id="home">
+    <div id="overlay">
+      <div class="image-text-container">
+        <img src="https://i.imgur.com/7HuMpSe.jpg" alt="Your Image">
+        <div class="text-container">
+          <h3>Welcome to my website🙂</h3>
+          <h2>I am</h2>
+          <h1 class="name"><span class="typed-text"></span><span class="cursor">&nbsp;<script>
+            const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["Joseph Sou", "蘇耀傑"];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if (!cursorSpan.classList.contains("typing"))
+      cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } else {
+    cursorSpan.classList.remove("typing");
+    setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+  if (charIndex > 0) {
+    if (!cursorSpan.classList.contains("typing"))
+      cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(
+      0,
+      charIndex - 1
+    );
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  // On DOM Load initiate the effect
+  if (textArray.length) setTimeout(type, newTextDelay + 250);
+});
+</script></span></h1>
+
+        </div>
+      </div>
+      <h2 class="Intro">
+        Self&nbsp Introduction:</h2>
+      <h3 class="Form">I am Joseph from <a href="http://www.cdsj5.edu.mo" style="font-family: 'Kalam', san-serif; color:white; -webkit-text-stroke: 3px black; font-size: 1.3em" title="School Official Website" target="_blank">CDSJ5</a>. I love to solve mathematics and logical problems very much. I started learning programming at F3 and found myself interested in it. I have learned Python, HTML, and further Web Crawling. In the future, I hope to become a programmer and study more about artificial intelligence.</h3>
+
+    </div>
+  </section>
+
+  <!-- Awards -->
+  <section class="pageTwo" id="awards">
+    <h1 class="pageTitle" style="border-color: white; color: white; margin-bottom: 20px;"> Awards 🏆</h1>
+    <div class="timeline">
+
+      <h2 class="timeline__item timeline__item--year">2019</h2>
+
+      <div class="timeline__item">
+        <h3 class="timeline__title">
+          <p ref="" style="margin: 0; font-family: 'Kalam', serif; color: white; font-size: 1em; line-height: 1.7; border-bottom-style: solid; border-bottom-width:2px">MathConceptition Macau Region</a>
+          <p class="awa">Silver Award</p>
+        </h3>
+        <a href="https://i.imgur.com/j2S5uJd.jpg"><img src="https://i.imgur.com/j2S5uJd.jpg" alt=""></a>
+      </div>
+
+      <h2 class="timeline__item timeline__item--year">2020</h2>
+
+      <div class="timeline__item">
+        <h3 class="timeline__title"><a href="http://www.firsteducation.hk/a/19/142/20210114/239.html" style="margin: 0; font-family: 'Kalam', serif; color: white; font-size: 1em; line-height: 1.7; border-bottom-style: solid; border-bottom-width:2px">Global Mathematics Coding Competition Macau Division Preliminary Competition</a>
+          <p class="awa">Bronze Award</p>
+        </h3>
+        <a href="https://i.imgur.com/H7H77G3.jpg"><img src="https://i.imgur.com/H7H77G3.jpg" alt=""></a>
+      </div>
+
+      <h2 class="timeline__item timeline__item--year">2021</h2>
+
+      <div class="timeline__item">
+        <h3 class="timeline__title"><a href="" style="margin: 0; font-family: 'Kalam', serif; color: white; font-size: 1em; line-height: 1.7; border-bottom-style: solid; border-bottom-width:2px">MathConceptition Macau Region</a>
+          <p class="awa">Silver Award</p>
+        </h3>
+        <a href="https://i.imgur.com/lcuA8pL.jpg"><img src="https://i.imgur.com/lcuA8pL.jpg" alt=""></a>
+      </div>
+
+      <div class="timeline__item">
+        <h3 class="timeline__title"><a href="https://drive.google.com/file/d/136J43TZvKSBObJAhb0M4-brH5ewutbpA/view?usp=sharing" style="margin: 0; font-family: 'Kalam', serif; color: white; font-size: 1em; line-height: 1.7; border-bottom-style: solid; border-bottom-width:2px">The 19 th National Primary and Secondary School Information Technology Innovation Practice Competition - Macau Region Selection Contest<p class="awa">Champion</p>
+        </h3>
+        <a href="https://i.imgur.com/9Ign5I0.jpg"><img src="https://i.imgur.com/9Ign5I0.jpg" alt=""></a>
+      </div>
+
+      <div class="timeline__item">
+        <h3 class="timeline__title"><a href="https://drive.google.com/file/d/18hb9wbGXZal-KVFkDbigLueTtWuA0UDC/view?usp=sharing" style="margin: 0; font-family: 'Kalam', serif; color: white; font-size: 1em; line-height: 1.7; border-bottom-style: solid; border-bottom-width:2px">The 19 th National Primary and Secondary School Information Technology Innovation Practice Competition - Final Round<p class="awa">Second Prize</p>
+        </h3>
+        <a href="https://i.imgur.com/XuvmgB6.png"><img src="https://i.imgur.com/XuvmgB6.png" alt=""></a>
+      </div>
+
+      <h2 class="timeline__item timeline__item--year">2022</h2>
+
+      <div class="timeline__item">
+        <h3 class="timeline__title"><a href="http://www.firsteducation.hk/a/19/142/20220401/315.html" style="margin: 0; font-family: 'Kalam', serif; color: white; font-size: 1em; line-height: 1.7; border-bottom-style: solid; border-bottom-width:2px">Global Mathematics Coding Competition Macau Division Preliminary Competition<p class="awa">Merit Award</p>
+        </h3>
+        <a href="https://i.imgur.com/GLTsFxo.jpg"><img src="https://i.imgur.com/GLTsFxo.jpg" alt=""></a>
+      </div>
+
+      <div class="timeline__item">
+        <h3 class="timeline__title"><a href="https://drive.google.com/file/d/17ufCboDoqRrh0iiZx54Ce7CPJk4RTUKs/view?usp=sharing" style="margin: 0; font-family: 'Kalam', serif; color: white; font-size: 1em; line-height: 1.7; border-bottom-style: solid; border-bottom-width:2px">The 14 th Office Skills Competition for Macao Students - Microsoft Office PowerPoint<p class="awa">First Runner-up</p>
+        </h3>
+        <a href="https://i.imgur.com/v17ZI3w.jpg"><img src="https://i.imgur.com/v17ZI3w.jpg" alt=""></a>
+      </div>
+
+      <div class="timeline__item">
+        <h3 class="timeline__title"><a href="http://www.firsteducation.hk/a/19/20230109/360.html" style="margin: 0; font-family: 'Kalam', serif; color: white; font-size: 1em; line-height: 1.7; border-bottom-style: solid; border-bottom-width:2px">WMI World Mathematics Invitational</a>
+          <p class="awa">Silver Award</p>
+        </h3>
+        <a href="https://i.imgur.com/iOWHddf.jpg"><img src="https://i.imgur.com/iOWHddf.jpg" alt=""></a>
+      </div>
+
+      <h2 class="timeline__item timeline__item--year">2023</h2>
+
+      <div class="timeline__item">
+        <h3 class="timeline__title"><a href="http://www.firsteducation.hk/a/19/120/20230328/376.html" style="margin: 0; font-family: 'Kalam', serif; color: white; font-size: 1em; line-height: 1.7; border-bottom-style: solid; border-bottom-width:2px">GMEC Global Mathematics Elite Competition - Preliminary Macau - Mathematics Group</a>
+          <p class="awa">Silver Award</p>
+        </h3>
+        <a href="https://i.imgur.com/RfEh4Zl.jpg"><img src="https://i.imgur.com/RfEh4Zl.jpg" alt=""></a>
+      </div>
+
+      <div class="timeline__item">
+        <h3 class="timeline__title"><a href="http://www.firsteducation.hk/a/19/120/20230328/376.html" style="margin: 0; font-family: 'Kalam', serif; color: white; font-size: 1em; line-height: 1.7; border-bottom-style: solid; border-bottom-width:2px">GMEC Global Mathematics Elite Competition - Preliminary Macau - Math Olympiad Group</a>
+          <p class="awa">Bronze Award</p>
+        </h3>
+        <a href="https://i.imgur.com/RfEh4Zl.jpg"><img src="https://i.imgur.com/RfEh4Zl.jpg" alt=""></a>
+      </div>
+
+      <div class="timeline__item">
+        <h3 class="timeline__title"><a href="https://drive.google.com/file/d/1bFFh9Ja8kOjaWyTEfuwzjSj7s3uUT1eR/view?usp=sharing" style="margin: 0; font-family: 'Kalam', serif; color: white; font-size: 1em; line-height: 1.7; border-bottom-style: solid; border-bottom-width:2px">Asia International Mathematical Olympiad Open Contest</a>
+          <p class="awa">Silver Award</p>
+        </h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Qualification -->
+  <section class="pageThree" id="qualis">
+    <h1 class="pageTitle" style="border-color: white; margin-bottom: 20px;"> Qualifications 📄 </h1>
+    <ul class="quali">
+      <li>Microsoft Office Specialist</li>
+    </ul>
+    <ul class="quali1">
+      <li>
+        <p class="quali-year">MOS 2019</p>
+      </li>
+
+      <li><a href="https://i.imgur.com/lZ9qaWq.jpg" title="Clicks for checking the certificate" target="_blank">Microsoft Excel 2019 Associate </a>
+      </li>
+
+      <li><a href="https://i.imgur.com/svtF8Gp.jpg" title="Clicks for checking the certificate" target="_blank">Microsoft Excel 2019 Expert</a>
+      </li>
+
+      <li><a href="https://i.imgur.com/uv2GMKE.jpg" title="Clicks for checking the certificate" target="_blank">Microsoft PowerPoint 2019 Associate</a>
+      </li>
+
+      <li><a href="https://i.imgur.com/4qJOgRi.jpg" title="Clicks for checking the certificate" target="_blank">Microsoft Word 2019 Associate</a>
+      </li>
+
+      <li><a href="https://i.imgur.com/B9C1fvB.jpg" title="Clicks for checking the certificate" target="_blank">Microsoft Word 2019 Expert</a>
+      </li>
+
+      <li><a href="https://i.imgur.com/Ep8vViu.jpg" title="Clicks for checking the certificate" target="_blank" style="color: Orange">Microsoft Office Specialist - Associate</a>
+      </li>
+
+      <li><a href="https://i.imgur.com/d48xnGX.jpg" title="Clicks for checking the certificate" target="_blank" style="color: Orange">Microsoft Office Specialist - Expert</a>
+      </li>
+
+    </ul>
+
+    <ul class="quali1">
+      <li>
+        <p class="quali-year">MOS 2016</p>
+      </li>
+
+      <li><a href="https://i.imgur.com/z3HIORm.jpg" title="Clicks for checking the certificate" target="_blank">Office PowerPoint® 2016 </a>
+      </li>
+
+      <li><a href="https://i.imgur.com/mBxL3ZE.jpg" title="Clicks for checking the certificate" target="_blank">Office Word 2016</a>
+      </li>
+    </ul>
+  </section>
+
+  <!---skill-->
+  <section class="pageFour" id="skill">
+    <h1 class="pageTitle" style="border-color: white; margin-bottom: 2%;">Skills</h1>
+    
+    <h2 class="sk1">Speaking Languages</h2>
+    
+    <label for="file"><p class="skill-item">English:</p></label>
+    <div class="item-container">
+        <form action="test.aspx" method="get">
+      <progress value="0.55"></progress>
+    </form>
+      <p>(Intermediate)</p>
+</div>
+    
+    <label for="file"><p class="skill-item">Mandarin:</p></label>
+    <div class="item-container">
+        <form action="test.aspx" method="get">
+      <progress value="0.65"></progress>
+    </form>
+      <p>(Intermediate)</p>
+</div>
+    
+    <label for="file"><p class="skill-item">Cantonese:</p></label>
+    <div class="item-container">
+        <form action="test.aspx" method="get">
+      <progress value="0.95"></progress>
+    </form>
+      <p>(Fluent)</p>
+</div>
+        
+    <h2 class="sk1">Programming Languages</h2>
+    <label for="file"><p class="skill-item">C++:</p></label>
+    <div class="item-container">
+        <form action="test.aspx" method="get">
+      <progress value="0.3"></progress>
+    </form>
+      <p>(Basic)</p>
+</div>
+    
+    <label for="file"><p class="skill-item">C Program:</p></label>
+    <div class="item-container">
+        <form action="test.aspx" method="get">
+      <progress value="0.5"></progress>
+    </form>
+      <p>(Intermediate)</p>
+</div>
+    
+    <label for="file"><p class="skill-item">HTML & CSS:</p></label>
+    <div class="item-container">
+        <form action="test.aspx" method="get">
+      <progress value="0.6"></progress>
+    </form>
+      <p>(Intermediate)</p>
+</div>
+    
+    <label for="file"><p class="skill-item">Python:</p></label>
+    <div class="item-container">
+        <form action="test.aspx" method="get">
+      <progress value="0.8"></progress>
+    </form>
+      <p>(Proficient)</p>
+</div>
+    
+    <h2 class="sk1">Computer software</h2>
+    <label for="file"><p class="skill-item">Microsoft Excel:</p></label>
+    <div class="item-container">
+        <form action="test.aspx" method="get">
+      <progress value="0.4"></progress>
+    </form>
+      <p>(Intermediate)</p>
+</div>
+    
+    <label for="file"><p class="skill-item">Microsoft Word:</p></label>
+    <div class="item-container">
+        <form action="test.aspx" method="get">
+      <progress value="0.7"></progress>
+    </form>
+      <p>(Proficient)</p>
+</div>
+    
+    <label for="file"><p class="skill-item">Microsoft PowerPoint:</p></label>
+    <div class="item-container">
+        <form action="test.aspx" method="get">
+      <progress value="0.9"></progress>
+    </form>
+      <p>(Proficient)</p>
+</div>    
+  </section>
+
+  <!---more-->
+  <section class="pageFive" id="more">
+    <h1 class="pageTitle" style="border-color: white; color: white; margin-bottom: 20px;">More...</h1>
+    <div class="left1">
+      <h2 class="ac">Extracurricular Activities</h2>
+      
+      <p class="ac1"><a href="http://cdsj5robot.com/" title="School Robot Class Official Website" target="_blank">Programming and Robot Control Team</a></p>
+      <p class="ac3" style="margin-top: 8%;">September 2020 - Present</p>
+      
+      <p class="ac1">Mathematical Olympiad Class</p>
+      <p class="ac3" style="margin-top: 8%;">September 2022 - Present</p>
+    </div>
+    
+    <p class="ac1">Literature Teaching Board Game Research and Development Interest Class</p>
+      <p class="ac3" style="margin-top: 8%;">September 2022 - Present</p>
+    </div>
+        
+    <p class="ac1">Advanced Mathematics Class</p>
+      <p class="ac3" style="margin-top: 8%;">September 2021 - Present</p>
+    </div>
+    
+    <p class="ac1">Campus Weather Monitoring Team</p>
+      <p class="ac3" style="margin-top: 8%;">September 2021 - July 2022</p>
+    </div>
+    
+    <p class="ac1">Table Tennis School Team</p>
+      <p class="ac3" style="margin-top: 8%;">September 2019 - July 2020</p>
+    </div>
+        
+    
+    <div class="right1">
+      <h2 class="ac">Hobbies</h2>
+      <p class="ac1">Solving Mathematics Problems</p>
+      <p class="ac1">Playing Table Tennis</p>
+      <p class="ac1">Programming</p>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="pageSix" id="contact">
+    <h1 class="pageTitle" style="border-color: white; color: white; margin-bottom: 20px;"> Contact Info</h1>
+    <div class="bottomBtnList">
+      <p class="email">Instagram: <a href="https://instagram.com/joseph.so?igshid=NGExMmI2YTkyZg=="> joseph.so</a></p>
+      <p class="email">Email: josephsou318@gmail.com</p>
+      <p class="email">Facebook: <a href="https://www.facebook.com/profile.php?id=100023495388401&mibextid=ZbWKwL"> Joseph So</a></p>
+    </div>
+
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
